@@ -297,3 +297,13 @@ perks = [
   ["Heal Clip"],
   ["Precision Instrument", "Moving Target"],
 ]
+
+[[roll]]
+weapon = "Igneous Hammer"
+notes = "PvP (KA/LW/Slideshot + Adagio/PI) – MW: Range"
+perks = [
+  ["Fluted Barrel"],
+  ["Ricochet Rounds"],
+  ["Keep Away", "Lone Wolf", "Slideshot"],
+  ["Adagio", "Precision Instrument"],
+]
