@@ -83,7 +83,8 @@ def main():
             # an empty column means "any"
             for combo in product(*[p for p in picks if p]):
                 perks = f"&perks={','.join(map(str, combo))}" if combo else ""
-                out.append(f"dimwishlist:item={item['hash']}{perks}")
+                sign = "-" if roll.get("trash") else ""  # negative hash = thumbs down in DIM
+                out.append(f"dimwishlist:item={sign}{item['hash']}{perks}")
         out.append("")
         for c, want in enumerate(roll["perks"]):
             for w in want:

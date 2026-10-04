@@ -4,6 +4,7 @@ description = "PvP god rolls"
 # One [[roll]] per roll you want. perks = [barrels, mags, trait 1, trait 2].
 # Any listed perk in a column is OK. Use [] for "don't care" (trailing columns can be omitted).
 # Names are case-insensitive; typos fail the build with suggestions.
+# trash = true makes it a thumbs-down. DIM uses the FIRST matching line, so put trash entries after the good rolls.
 #
 # Example:
 # [[roll]]
@@ -76,3 +77,19 @@ perks = [
   ["Slideshot"],
   ["Zen Moment", "Precision Instrument"],
 ]
+
+[[roll]]
+weapon = "Bottom Dollar"
+notes = "Best roll, but strictly worse than other 120s – no Precision Instrument or 2-tap perk. MW: Range"
+perks = [
+  ["Fluted Barrel"],
+  ["Ricochet Rounds"],
+  ["Slideshot"],
+  ["Eye of the Storm"],
+]
+
+[[roll]]
+weapon = "Bottom Dollar"
+trash = true
+notes = "Strictly worse than other 120s – no Precision Instrument or 2-tap perk"
+perks = []
