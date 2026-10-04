@@ -150,7 +150,18 @@ weapon = "Crimil's Dagger"
 notes = "PvP – MW: Range"
 perks = [
   ["Fluted Barrel"],
-  ["Accurized Rounds", "Steady Rounds"],
+  ["Accurized Rounds"],
+  ["Keep Away", "Lone Wolf", "Slideshot", "Slideways"],
+  ["Adagio", "Precision Instrument"],
+]
+
+# Good roll first: DIM uses the first matching line
+[[roll]]
+weapon = "Crimil's Dagger"
+notes = "PvP – MW: Range"
+perks = [
+  ["Corkscrew Rifling"],
+  ["Steady Rounds"],
   ["Keep Away", "Lone Wolf", "Slideshot", "Slideways"],
   ["Adagio", "Precision Instrument"],
 ]
@@ -213,7 +224,17 @@ weapon = "Exuviae"
 notes = "PvP (LW + PI) – MW: Range"
 perks = [
   ["Fluted Barrel"],
-  ["Accurized Rounds", "Steady Rounds"],
+  ["Accurized Rounds"],
+  ["Lone Wolf"],
+  ["Precision Instrument"],
+]
+
+[[roll]]
+weapon = "Exuviae"
+notes = "PvP (LW + PI) – MW: Range"
+perks = [
+  ["Corkscrew Rifling"],
+  ["Steady Rounds"],
   ["Lone Wolf"],
   ["Precision Instrument"],
 ]
