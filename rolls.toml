@@ -154,3 +154,9 @@ perks = [
   ["Keep Away", "Lone Wolf", "Slideshot", "Slideways"],
   ["Adagio", "Precision Instrument"],
 ]
+
+[[roll]]
+weapon = "Crisis Inverted"
+trash = true
+notes = "Mid perks, bad stats"
+perks = []
