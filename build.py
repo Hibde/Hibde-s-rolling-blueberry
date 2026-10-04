@@ -80,27 +80,25 @@ def main():
             continue
         versions = current_versions(versions)
         out.append(f"//notes:{roll.get('notes', name)}")
-        found, options = set(), [set() for _ in roll["perks"]]
-        for item in versions:  # reissues/adepts share a name; wishlist them all
+        for item in versions:  # current versions share a perk pool (e.g. base + Adept)
             cols = columns(item, items, plugsets)
             picks = []
-            for c, (want, pool) in enumerate(zip(roll["perks"], cols)):
-                options[c] |= pool.keys()
-                hashes = [pool[w.lower()] for w in want if w.lower() in pool]
-                found |= {(c, w.lower()) for w in want if w.lower() in pool}
-                picks.append(hashes)
-            if any(want and not got for want, got in zip(roll["perks"], picks)):
-                continue  # this version can't roll the requested perks
-            # an empty column means "any"
-            for combo in product(*[p for p in picks if p]):
-                perks = f"&perks={','.join(map(str, combo))}" if combo else ""
-                sign = "-" if roll.get("trash") else ""  # negative hash = thumbs down in DIM
-                out.append(f"dimwishlist:item={sign}{item['hash']}{perks}")
+            # each perk group goes to whichever column holds those perks; column order varies per gun
+            for want in filter(None, roll["perks"]):
+                col = next((c for c in cols if all(w.lower() in c for w in want)), None)
+                if col is None:
+                    if item is versions[0]:
+                        everything = sorted(set().union(*cols))
+                        errors.append(f"{name}: no single column has all of {want}. "
+                                      f"Unknown here: {[w for w in want if w.lower() not in everything]}")
+                    break
+                picks.append([col[w.lower()] for w in want])
+            else:
+                for combo in product(*picks):
+                    perks = f"&perks={','.join(map(str, combo))}" if combo else ""
+                    sign = "-" if roll.get("trash") else ""  # negative hash = thumbs down in DIM
+                    out.append(f"dimwishlist:item={sign}{item['hash']}{perks}")
         out.append("")
-        for c, want in enumerate(roll["perks"]):
-            for w in want:
-                if (c, w.lower()) not in found:
-                    errors.append(f"{name}: '{w}' can't roll in column {c + 1} (options: {sorted(options[c])})")
 
     if errors:
         sys.exit("\n".join(errors))
