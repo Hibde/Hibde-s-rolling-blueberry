@@ -181,3 +181,9 @@ perks = [
   ["Keep Away"],
   ["Opening Shot"],
 ]
+
+[[roll]]
+weapon = "Dire Promise"
+trash = true
+notes = "Hard crept by Solemn Lie"
+perks = []
