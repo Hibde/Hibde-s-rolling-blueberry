@@ -46,6 +46,19 @@ def columns(item, items, plugsets):
     return cols[:4]
 
 
+def trait_sets(item):
+    """The randomized plug sets of the weapon-perk sockets; equal sets = same perk pool."""
+    sockets = item["sockets"]
+    idx = next(c["socketIndexes"] for c in sockets["socketCategories"] if c["socketCategoryHash"] == WEAPON_PERKS)
+    return tuple(sockets["socketEntries"][i].get("randomizedPlugSetHash") for i in idx)
+
+
+def current_versions(versions):
+    """Only the newest release (manifest index ~ release order) plus versions sharing its perk pool, e.g. its Adept."""
+    newest = max(versions, key=lambda i: i["index"])
+    return [i for i in versions if trait_sets(i) == trait_sets(newest)]
+
+
 def main():
     cfg = tomllib.loads(Path("rolls.toml").read_text())
     items, plugsets = load()
@@ -65,9 +78,7 @@ def main():
         if not versions:
             errors.append(f"{name}: unknown weapon (did you mean {difflib.get_close_matches(name.lower(), by_name, 3)}?)")
             continue
-        # same name in several elements: only keep the newest element (manifest index ~ release order)
-        newest = max(versions, key=lambda i: i["index"])["defaultDamageType"]
-        versions = [i for i in versions if i["defaultDamageType"] == newest]
+        versions = current_versions(versions)
         out.append(f"//notes:{roll.get('notes', name)}")
         found, options = set(), [set() for _ in roll["perks"]]
         for item in versions:  # reissues/adepts share a name; wishlist them all
