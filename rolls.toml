@@ -197,3 +197,13 @@ perks = [
   ["Keep Away", "Slideshot"],
   ["Eye of the Storm", "Precision Instrument"],
 ]
+
+[[roll]]
+weapon = "Exalted Truth"
+notes = "PvP (KA/LW/Slideshot + EotS/PI) – MW: Range"
+perks = [
+  ["Smallbore", "Hammer-Forged Rifling", "Corkscrew Rifling", "Fluted Barrel"],
+  ["Accurized Rounds", "Ricochet Rounds"],
+  ["Keep Away", "Lone Wolf", "Slideshot"],
+  ["Eye of the Storm", "Precision Instrument"],
+]
