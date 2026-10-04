@@ -80,6 +80,7 @@ perks = [
 
 [[roll]]
 weapon = "Bottom Dollar"
+trash = true
 notes = "Best roll, but strictly worse than other 120s – no Precision Instrument or 2-tap perk. MW: Range"
 perks = [
   ["Fluted Barrel"],
@@ -93,3 +94,13 @@ weapon = "Bottom Dollar"
 trash = true
 notes = "Strictly worse than other 120s – no Precision Instrument or 2-tap perk"
 perks = []
+
+[[roll]]
+weapon = "Cantata-57"
+notes = "TP super niche and horrible gun, but hard to find a 140 with Vorpal. MW: Range"
+perks = [
+  ["Smallbore", "Hammer-Forged Rifling", "Corkscrew Rifling", "Fluted Barrel"],
+  ["Accurized Rounds", "Ricochet Rounds"],
+  ["Eye of the Storm"],
+  ["Timed Payload", "Vorpal Weapon"],
+]
