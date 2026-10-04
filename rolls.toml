@@ -217,3 +217,33 @@ perks = [
   ["Lone Wolf"],
   ["Precision Instrument"],
 ]
+
+[[roll]]
+weapon = "Eyasluna"
+notes = "PvP (Slideshot + PI/MT) – MW: Range"
+perks = [
+  ["Smallbore", "Hammer-Forged Rifling", "Corkscrew Rifling", "Fluted Barrel"],
+  ["Accurized Rounds", "Ricochet Rounds"],
+  ["Slideshot"],
+  ["Precision Instrument", "Moving Target"],
+]
+
+[[roll]]
+weapon = "Eyasluna"
+notes = "PvP (Zen + PI/MT) – MW: Range"
+perks = [
+  ["Smallbore", "Hammer-Forged Rifling", "Corkscrew Rifling", "Fluted Barrel"],
+  ["Accurized Rounds", "Ricochet Rounds"],
+  ["Zen Moment"],
+  ["Precision Instrument", "Moving Target"],
+]
+
+[[roll]]
+weapon = "Eyasluna"
+notes = "PvP (Ele Cap + MT) – MW: Range"
+perks = [
+  ["Smallbore", "Hammer-Forged Rifling", "Corkscrew Rifling", "Fluted Barrel"],
+  ["Accurized Rounds", "Ricochet Rounds"],
+  ["Elemental Capacitor"],
+  ["Moving Target"],
+]
