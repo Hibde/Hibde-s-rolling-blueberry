@@ -104,3 +104,13 @@ perks = [
   ["Eye of the Storm"],
   ["Timed Payload", "Vorpal Weapon"],
 ]
+
+[[roll]]
+weapon = "Combined Action"
+notes = "110 weapon stat. MW: Range"
+perks = [
+  ["Fluted Barrel"],
+  ["Ricochet Rounds"],
+  ["Zen Moment"],
+  ["Adagio"],
+]
