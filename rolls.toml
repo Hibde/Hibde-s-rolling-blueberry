@@ -267,3 +267,13 @@ perks = [
   ["Elemental Capacitor"],
   ["Moving Target"],
 ]
+
+[[roll]]
+weapon = "Fatebringer"
+notes = "PvP (KA + EotS/PI) – MW: Range"
+perks = [
+  ["Smallbore", "Hammer-Forged Rifling", "Corkscrew Rifling", "Fluted Barrel"],
+  ["Accurized Rounds", "Ricochet Rounds"],
+  ["Keep Away"],
+  ["Eye of the Storm", "Precision Instrument"],
+]
