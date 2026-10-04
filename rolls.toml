@@ -114,3 +114,33 @@ perks = [
   ["Zen Moment"],
   ["Adagio"],
 ]
+
+[[roll]]
+weapon = "Corundum Hammer"
+notes = "PvP (Slideshot + KA/PI) – MW: Range"
+perks = [
+  ["Smallbore", "Hammer-Forged Rifling", "Corkscrew Rifling", "Fluted Barrel"],
+  ["Accurized Rounds", "Ricochet Rounds"],
+  ["Slideshot"],
+  ["Keep Away", "Precision Instrument"],
+]
+
+[[roll]]
+weapon = "Corundum Hammer"
+notes = "PvP (Slice + EP) – MW: Range"
+perks = [
+  ["Smallbore", "Hammer-Forged Rifling", "Corkscrew Rifling", "Fluted Barrel"],
+  ["Accurized Rounds", "Ricochet Rounds"],
+  ["Slice"],
+  ["Explosive Payload"],
+]
+
+[[roll]]
+weapon = "Corundum Hammer"
+notes = "PvP (Lone Wolf + KA/PI, Extended Mag) – MW: Range"
+perks = [
+  ["Smallbore", "Hammer-Forged Rifling", "Corkscrew Rifling", "Fluted Barrel"],
+  ["Extended Mag"],
+  ["Lone Wolf"],
+  ["Keep Away", "Precision Instrument"],
+]
