@@ -15,3 +15,13 @@ description = "PvP god rolls"
 #   ["Explosive Payload"],
 #   ["Firefly"],
 # ]
+
+[[roll]]
+weapon = "Ancient Gospel"
+notes = "PvP – MW: Range"
+perks = [
+  ["Smallbore", "Hammer-Forged Rifling", "Corkscrew Rifling", "Fluted Barrel"],
+  ["Accurized Rounds", "Ricochet Rounds"],
+  ["Lone Wolf", "Eye of the Storm"],
+  ["Precision Instrument"],
+]
