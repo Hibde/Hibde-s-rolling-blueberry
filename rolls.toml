@@ -155,6 +155,17 @@ perks = [
   ["Adagio", "Precision Instrument"],
 ]
 
+# Good roll first: DIM uses the first matching line
+[[roll]]
+weapon = "Crisis Inverted"
+notes = "Worst Vorpal option but it's Vorpal. MW: Range"
+perks = [
+  ["Hammer-Forged Rifling"],
+  ["Ricochet Rounds"],
+  ["Moving Target"],
+  ["Vorpal Weapon"],
+]
+
 [[roll]]
 weapon = "Crisis Inverted"
 trash = true
