@@ -1,5 +1,5 @@
 """Build wishlist.txt from rolls.toml using names, resolved against Bungie's live manifest."""
-import difflib, json, sys, tomllib, urllib.request
+import difflib, json, re, sys, tomllib, urllib.request
 from itertools import product
 from pathlib import Path
 
@@ -53,7 +53,9 @@ def main():
     for i in items.values():
         if i.get("itemType") == 3 and "sockets" in i and any(
                 e.get("randomizedPlugSetHash") for e in i["sockets"]["socketEntries"]):
-            by_name.setdefault(i["displayProperties"]["name"].lower(), []).append(i)
+            # "Igneous Hammer (Adept)" / "(Timelost)" / "(Harrowed)" count as the same weapon
+            base = re.sub(r"\s*\((adept|timelost|harrowed)\)$", "", i["displayProperties"]["name"].lower())
+            by_name.setdefault(base, []).append(i)
 
     out = [f"title:{cfg['title']}", f"description:{cfg['description']}", ""]
     errors = []
