@@ -207,3 +207,13 @@ perks = [
   ["Keep Away", "Lone Wolf", "Slideshot"],
   ["Eye of the Storm", "Precision Instrument"],
 ]
+
+[[roll]]
+weapon = "Exuviae"
+notes = "PvP (LW + PI) – MW: Range"
+perks = [
+  ["Fluted Barrel"],
+  ["Accurized Rounds", "Steady Rounds"],
+  ["Lone Wolf"],
+  ["Precision Instrument"],
+]
