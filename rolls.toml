@@ -35,3 +35,24 @@ perks = [
   ["Slideshot"],
   ["Opening Shot", "Timed Payload"],
 ]
+
+# Specific roll first so its note wins when both match
+[[roll]]
+weapon = "Austringer"
+notes = "PvP best (Snapshot + Zen) – MW: Range"
+perks = [
+  ["Smallbore", "Hammer-Forged Rifling", "Corkscrew Rifling", "Fluted Barrel"],
+  ["Accurized Rounds", "Ricochet Rounds"],
+  ["Snapshot Sights"],
+  ["Zen Moment"],
+]
+
+[[roll]]
+weapon = "Austringer"
+notes = "PvP – MW: Range"
+perks = [
+  ["Smallbore", "Hammer-Forged Rifling", "Corkscrew Rifling", "Fluted Barrel"],
+  ["Accurized Rounds", "Ricochet Rounds"],
+  [],
+  ["Zen Moment"],
+]
