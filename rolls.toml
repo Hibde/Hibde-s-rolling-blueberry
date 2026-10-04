@@ -56,3 +56,23 @@ perks = [
   [],
   ["Zen Moment"],
 ]
+
+[[roll]]
+weapon = "Better Devils"
+notes = "PvP (Slice + EP) – MW: Range"
+perks = [
+  ["Smallbore", "Hammer-Forged Rifling", "Corkscrew Rifling", "Fluted Barrel"],
+  ["Accurized Rounds", "Ricochet Rounds"],
+  ["Slice"],
+  ["Explosive Payload"],
+]
+
+[[roll]]
+weapon = "Better Devils"
+notes = "PvP (Slideshot + Zen/PI) – MW: Range"
+perks = [
+  ["Smallbore", "Hammer-Forged Rifling", "Corkscrew Rifling", "Fluted Barrel"],
+  ["Accurized Rounds", "Ricochet Rounds"],
+  ["Slideshot"],
+  ["Zen Moment", "Precision Instrument"],
+]
