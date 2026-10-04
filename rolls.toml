@@ -25,3 +25,13 @@ perks = [
   ["Lone Wolf", "Eye of the Storm"],
   ["Precision Instrument"],
 ]
+
+[[roll]]
+weapon = "Annual Skate"
+notes = "PvP – MW: Range"
+perks = [
+  ["TrueSight HCS"],
+  ["Accurized Rounds", "Ricochet Rounds"],
+  ["Slideshot"],
+  ["Opening Shot", "Timed Payload"],
+]
