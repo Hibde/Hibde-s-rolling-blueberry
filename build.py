@@ -65,6 +65,9 @@ def main():
         if not versions:
             errors.append(f"{name}: unknown weapon (did you mean {difflib.get_close_matches(name.lower(), by_name, 3)}?)")
             continue
+        # same name in several elements: only keep the newest element (manifest index ~ release order)
+        newest = max(versions, key=lambda i: i["index"])["defaultDamageType"]
+        versions = [i for i in versions if i["defaultDamageType"] == newest]
         out.append(f"//notes:{roll.get('notes', name)}")
         found, options = set(), [set() for _ in roll["perks"]]
         for item in versions:  # reissues/adepts share a name; wishlist them all
