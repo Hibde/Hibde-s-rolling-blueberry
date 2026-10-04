@@ -144,3 +144,13 @@ perks = [
   ["Lone Wolf"],
   ["Keep Away", "Precision Instrument"],
 ]
+
+[[roll]]
+weapon = "Crimil's Dagger"
+notes = "PvP – MW: Range"
+perks = [
+  ["Fluted Barrel"],
+  ["Accurized Rounds", "Steady Rounds"],
+  ["Keep Away", "Lone Wolf", "Slideshot", "Slideways"],
+  ["Adagio", "Precision Instrument"],
+]
