@@ -57,7 +57,7 @@ def main():
 
     out = [f"title:{cfg['title']}", f"description:{cfg['description']}", ""]
     errors = []
-    for roll in cfg["roll"]:
+    for roll in cfg.get("roll", []):
         name = roll["weapon"]
         versions = by_name.get(name.lower())
         if not versions:

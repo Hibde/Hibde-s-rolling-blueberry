@@ -4,13 +4,14 @@ description = "PvP god rolls"
 # One [[roll]] per roll you want. perks = [barrels, mags, trait 1, trait 2].
 # Any listed perk in a column is OK. Use [] for "don't care" (trailing columns can be omitted).
 # Names are case-insensitive; typos fail the build with suggestions.
-
-[[roll]]
-weapon = "Fatebringer"
-notes = "Fatebringer PvP – Opening Shot / Explosive Payload + Firefly"
-perks = [
-  ["Arrowhead Brake", "Corkscrew Rifling", "Hammer-Forged Rifling"],
-  ["Accurized Rounds", "Steady Rounds"],
-  ["Opening Shot", "Explosive Payload"],
-  ["Firefly"],
-]
+#
+# Example:
+# [[roll]]
+# weapon = "Fatebringer"
+# notes = "Fatebringer PvP"
+# perks = [
+#   ["Arrowhead Brake", "Corkscrew Rifling"],
+#   ["Accurized Rounds"],
+#   ["Explosive Payload"],
+#   ["Firefly"],
+# ]
