@@ -155,7 +155,6 @@ perks = [
   ["Adagio", "Precision Instrument"],
 ]
 
-# Good roll first: DIM uses the first matching line
 [[roll]]
 weapon = "Crimil's Dagger"
 notes = "PvP – MW: Range"
