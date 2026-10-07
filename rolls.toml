@@ -317,3 +317,13 @@ perks = [
   ["Lone Wolf", "Keep Away"],
   ["Precision Instrument", "Timed Payload"],
 ]
+
+[[roll]]
+weapon = "Kept Confidence"
+notes = "PvP (Killing Wind + EotS) – MW: Range"
+perks = [
+  ["Smallbore"],
+  ["Accurized Rounds"],
+  ["Killing Wind"],
+  ["Eye of the Storm"],
+]
